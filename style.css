@@ -1,0 +1,292 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    color: #F0F4F8
+}
+#front-end {
+    position: absolute;
+    left: 4vw;
+    top: 4vh;
+    width: 28vw;
+    height: 15vh;
+}
+#back-end {
+    position: absolute;
+    left: 4vw;
+    top: 23vh;
+    width: 28vw;
+    height: 15vh;
+}
+#bi-dev{
+    position: absolute;
+    left: 36vw;
+    top: 4vh;
+    width: 28vw;
+    height: 15vh;
+}
+#azure{
+    position: absolute;
+    left: 36vw;
+    top: 23vh;
+    width: 28vw;
+    height: 15vh;
+}
+#arseniy{
+    position: absolute;
+    left: 36vw;
+    top: 42vh;
+    width: 28vw;
+    height: 15vh;
+}
+#projects{
+    position: absolute;
+    left: 36vw;
+    top: 71vh;
+    width: 28vw;
+    height: 7vh;
+}
+#edu{
+    position: absolute;
+    left: 36vw;
+    top: 61vh;
+    width: 28vw;
+    height: 35vh;
+}
+#data-analyst{
+    position: absolute;
+    left: 4vw;
+    top: 42vh;
+    width: 28vw;
+    height: 25vh;
+}
+#data-engineer{
+    position: absolute;
+    left: 4vw;
+    top: 71vh;
+    width: 28vw;
+    height: 25vh;
+}
+#why {
+    position: absolute;
+    left: 68vw;
+    top: 23vh;
+    width: 28vw;
+    height: 73vh;
+}
+#toloka{
+    position: absolute;
+    left: 68vw;
+    top: 4vh;
+    width: 28vw;
+    height: 15vh;
+}
+.name{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 46px;
+    font-weight: 800;
+}
+.name h1{
+    font-size: 46px;
+    text-align: center;
+}
+.about{
+    margin: 10px;
+}
+p{
+    font-size: 24px;
+    text-align: center;
+}
+.role{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    font-size: 30px;
+    font-weight: 800;
+}
+.containers {
+    border-radius: 20px;
+    display: flex;
+    width: 100%; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    background-color: #3A506B;
+    transition: box-shadow 0.3s ease;
+}
+.skills {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    margin: 10px;
+    width: inherit;
+}
+.skill {
+    padding: 4px;
+    margin: 4px;
+    width: auto;
+    height: 25px;
+    border-radius: 4px;
+    background: #5E6A93;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.containers:hover {
+    box-shadow: 0 8px 16px 0 #1F2E4A;
+}
+.reason {
+    padding: 4px;
+    margin: 6px auto;;
+    width: fit-content;
+    height: 25px;
+    border-radius: 4px;
+    background: #5E6A93;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+.reason:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px 0 #1F2E4A;
+}
+.institute {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    width: inherit;
+    height: 40vh;
+}
+/* Modals */
+
+.popup  {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color:#3A506B;
+    width: 40vw;
+    max-width: 80%;
+  }
+  .popup.active,
+  .popup-two.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal-header .title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  /* door */
+
+/* Door Container */
+.door {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 1000;
+}
+
+/* Door Content */
+.door-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Button and Input Styles */
+button, input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input {
+    width: calc(100% - 22px);
+}

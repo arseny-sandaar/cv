@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <!-- Popup Container -->
+    <div id="door" class="door">
+        <div class="door-content">
+            <span id="close-btn" class="close-btn">&times;</span>
+            <h2 style="color: black;">Enter Password</h2>
+            <input type="password" id="password" placeholder="Password">
+            <button id="submit-btn">Submit</button>
+        </div>
+    </div>
+    <!-- Main content -->
+    <div id="front-end" class="containers">
+        <div class="role">Front-end</div>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScripts</div>
+        </div>
+    </div>
+    <div id="back-end" class="containers">
+        <div class="role">Back-end</div>
+        <div class="skills">
+            <div class="skill">Node-RED</div>
+            <div class="skill">Python</div>
+            <div class="skill">JavaScripts</div>
+            <div class="skill">SQL databases</div>
+        </div>
+    </div>
+    <div id="bi-dev" class="containers">
+        <div class="role">Power Apps / Power BI</div>
+        <div class="skills">
+            <div class="skill">Sharepoint Lists</div>
+            <div class="skill">MS Excel</div>
+            <div class="skill">SQL</div>
+            <div class="skill">DAX</div>
+            <div class="skill">Power Fx</div>
+            <div class="skill">Power Automate</div>
+        </div>
+    </div>
+    <div id="azure" class="containers">
+        <div class="role">Azure</div>
+        <div class="skills">
+            <div class="skill">IoT hub</div>
+            <div class="skill">IoT Edge Devices</div>
+            <div class="skill">Stream Analytics</div>
+            <div class="skill">Azure Functions</div>
+            <div class="skill">Azure DB</div>
+            <div class="skill">VM</div>
+        </div>
+    </div>
+    <div id="arseniy" class="containers" style="background: #182a3a;">
+        <div class="name">ARSENIY SLEPTSOV</div>
+    </div>
+    <div id="edu" class="containers">
+        <div class="role">Education and Experience</div>
+        <div class="skills">
+            <div class="skill">Specialist degree in Power Engineering @BMSTU</div>
+            <div class="skill">Master of Science in Energy Systems @Skoltech</div>
+            <div class="skill">Mathematical Modeling Intern @HPBS</div>
+            <div class="skill">PhD in Engineering Systems @Skoltech</div>
+            <div class="skill">Data Analyst/Engineer, Software Developer @Tau</div>
+        </div>
+    </div>
+    <div id="data-analyst" class="containers">
+        <div class="role">Data Analyst</div>
+        <div class="skills">
+            <div class="skill">SQL</div>
+            <div class="skill">Python</div>
+            <div class="skill">Pandas</div>
+            <div class="skill">Numpy</div>
+            <div class="skill">Matplotlib</div>
+            <div class="skill">Plotly</div>
+            <div class="skill">Matlab</div>
+            <div class="skill">Julia</div>
+            <div class="skill">VBA</div>
+            <div class="skill">Excel</div>
+            <div class="skill">Data Cleaning</div>
+            <div class="skill">Data Base Maintenance</div>
+        </div>
+    </div>
+    <div id="data-engineer" class="containers">
+        <div class="role">Data Engineer</div>
+        <div class="skills">
+            <div class="skill">ETL</div>
+            <div class="skill">Grafana</div>
+            <div class="skill">Data Quality Management</div>
+            <div class="skill">Data Parsing</div>
+            <div class="skill">Azure Data Studio</div>
+            <div class="skill">Bash Scripting</div>
+        </div>
+    </div>
+    <div id="why" class="containers" style="background: linear-gradient(to top, #182a3a, #3A506B); ">
+        <div class="role">Motivation for Pursuing This Role</div>
+        <div class="skills" style="flex-direction: column;">
+            <div data-modal-target="#popup-one" class="reason">Interest in AI and Innovation</div>
+            <div data-modal-target="#popup-two" class="reason">New Opportunities</div>
+            <div data-modal-target="#popup-three" class="reason">Interest in Platform</div>
+            <div data-modal-target="#popup-four" class="reason">Immediate Impact</div>
+            <div data-modal-target="#popup-five" class="reason">Contributing to Growth</div>
+            <div data-modal-target="#popup-six" class="reason">Problem-Solving Passion</div>
+            <div data-modal-target="#popup-seven" class="reason">Data-Driven Approach</div>
+            <div data-modal-target="#popup-eight" class="reason">Dynamic Environment</div>
+            <div data-modal-target="#popup-nine" class="reason">Project and Product Management</div>
+            <div data-modal-target="#popup-ten" class="reason">Long-Term Commitment</div>
+            <div data-modal-target="#popup-eleven" class="reason">Professional Growth</div>
+            <div data-modal-target="#popup-twelve" class="reason">Continuous Learning</div>
+        </div>
+    </div>
+    <div id="toloka" data-modal-target="#review" class="containers">
+        <div class="role">Home Readings</div>
+        <div class="skills">
+            <div class="skill">Toloka Product</div>
+            <div class="skill">Decomposition</div>
+            <div class="skill">Quality Control</div>
+        </div>
+    </div>
+    <!-- modals -->
+    <!-- one -->
+    <div class="popup" id="popup-one">
+        <div class="modal-header">
+          <div class="title">Interest in AI and Innovation</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            I am eager to be part of the rapidly growing AI field, which presents exciting opportunities for innovation. I see your company as a key player in this space, and I want to contribute to and grow within this dynamic industry.
+        </div>
+    </div>
+    <!-- two -->
+    <div class="popup" id="popup-two">
+        <div class="modal-header">
+          <div class="title">New Opportunities</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            Joining your team represents a fresh challenge where I can expand my skills and explore new horizons within a cutting-edge industry.
+        </div>
+    </div>
+    <!-- three -->
+    <div class="popup" id="popup-three">
+        <div class="modal-header">
+          <div class="title">Interest in Platform</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            I have already studied Toloka's platform, and I am inspired by its potential. The challenges it addresses and the impact it can have on the market excite me.
+        </div>
+    </div>
+    <!-- four -->
+    <div class="popup" id="popup-four">
+        <div class="modal-header">
+          <div class="title">Immediate Impact</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            I am motivated by the desire to see the immediate results of my work, particularly in how it satisfies clients and drives their success.
+        </div>
+    </div>
+    <!-- five -->
+    <div class="popup" id="popup-five">
+        <div class="modal-header">
+          <div class="title">Contributing to Growth</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            My goal is to help the company grow by analyzing client needs and aligning them with our capabilities, ensuring we deliver outstanding results.
+        </div>
+    </div>
+    <!-- six -->
+    <div class="popup" id="popup-six">
+        <div class="modal-header">
+          <div class="title">Problem-Solving Passion</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            I thrive on solving problems and finding insights in data. These tasks not only motivate me but also contribute significantly to the overall success of the company.
+        </div>
+    </div>
+    <!-- seven -->
+    <div class="popup" id="popup-seven">
+        <div class="modal-header">
+          <div class="title">Data-Driven Approach</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            My passion for data analysis, automation, and visualization allows me to provide actionable insights and make informed decisions, driving both efficiency and effectiveness.
+        </div>
+    </div>
+    <!-- eight -->
+    <div class="popup" id="popup-eight">
+        <div class="modal-header">
+          <div class="title">Dynamic Environment</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            I excel in dynamic, startup-like environments that are open to change and innovation - qualities I see reflected in your company’s culture.
+        </div>
+    </div>
+    <!-- nine -->
+    <div class="popup" id="popup-nine">
+        <div class="modal-header">
+          <div class="title">Project and Product Management</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            I am excited about the opportunity to manage projects and develop products that truly meet client needs through effective communication and understanding.
+        </div>
+    </div>
+    <!-- ten -->
+    <div class="popup" id="popup-ten">
+        <div class="modal-header">
+          <div class="title">Long-Term Commitment</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            I am seeking a long-term position where I can stay for 3-5 years or more, and I see strong potential for that with your company, aligning with my career aspirations.
+        </div>
+    </div>
+    <!-- eleven -->
+    <div class="popup" id="popup-eleven">
+        <div class="modal-header">
+          <div class="title">Professional Growth</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            My ultimate goal is to grow as a technically competent leader and manager. This role offers the opportunity to develop these skills in a meaningful way.
+        </div>
+    </div>
+    <!-- twelve -->
+    <div class="popup" id="popup-twelve">
+        <div class="modal-header">
+          <div class="title">Continuous Learning</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            I have a deep interest in learning new things and understanding how they work, which aligns perfectly with the innovative and evolving nature of the AI field.
+        </div>
+    </div>
+    <!-- review -->
+    <!-- <div class="popup" id="review">
+        <div class="modal-header">
+          <div class="title">Mountain</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <img src="/img/mountain.jpg" alt="">
+        </div>
+    </div> -->
+    <div id="overlay"></div>
+      <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>
