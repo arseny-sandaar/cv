@@ -76,3 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
     door.style.display = 'flex';
 });
 
+function openLink(url) {
+  window.open(url,'_blank');
+}
